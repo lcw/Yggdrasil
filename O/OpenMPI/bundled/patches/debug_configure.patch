@@ -1,0 +1,18 @@
+--- a/configure	2019-10-07 11:25:05.000000000 -0700
++++ b/configure	2021-03-30 15:20:16.116060085 -0700
+@@ -45019,6 +45019,7 @@
+   CHARACTER :: bogus_variable
+ end program
+ _ACEOF
++set -x
+ if ac_fn_fc_try_compile "$LINENO"; then :
+   ompi_cv_fortran_have_CHARACTER=yes
+ else
+@@ -45812,6 +45813,7 @@
+ 
+     # Wow, this is sick.  But it works!  :-)
+ 
++set +x
+ 
+ 
+ 
