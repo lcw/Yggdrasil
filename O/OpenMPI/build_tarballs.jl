@@ -12,8 +12,8 @@ script = raw"""
 # Enter the funzone
 cd ${WORKSPACE}/srcdir/openmpi-*
 
-atomic_patch -u -p1 ${WORKSPACE}/srcdir/patches/debug_configure.patch
-./configure ompi_cv_fortran_sizeof_CHARACTER=1 --prefix=$prefix --host=$target --enable-shared=yes --enable-static=no --without-cs-fs
+# atomic_patch -u -p1 ${WORKSPACE}/srcdir/patches/debug_configure.patch
+./configure ompi_cv_fortran_alignment_CHARACTER=1 ompi_cv_fortran_sizeof_CHARACTER=1 --prefix=$prefix --host=$target --enable-shared=yes --enable-static=no --without-cs-fs
 
 # Build the library
 make "${flags[@]}" -j${nproc}
