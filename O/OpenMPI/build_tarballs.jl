@@ -80,9 +80,6 @@ export ompi_cv_fortran_true_value=1
 # Build the library
 make "${flags[@]}" -j${nproc}
 
-# Test the library
-make "${flags[@]}" check
-
 # Install the library
 make "${flags[@]}" install
 """
