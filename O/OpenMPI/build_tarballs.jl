@@ -75,6 +75,8 @@ export ompi_cv_fortran_sizeof_REALp8=8
 export ompi_cv_fortran_sizeof_type_test_mpi_handle_=4
 export ompi_cv_real16_c_equiv=yes
 export ompi_cv_fortran_true_value=1
+export opal_cv_Fortran_works=yes
+export opal_cv_Cpp_works=yes
 ./configure  --prefix=$prefix --host=$target --enable-shared=yes --enable-static=no --without-cs-fs
 
 # Build the library
